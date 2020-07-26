@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139162400-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139162400-3');
+    </script>
+
+    <!--ツイッターカード-->
+    <meta name="twitter:card" content="summary_large_image"/> <!--①-->
+    <meta name="twitter:site" content="@oguogu1996"/> <!--②-->
+    <meta property="og:url" content="https://www.takayaogura.com"/> <!--③-->
+    <meta property="og:title" content="ogu's portfolio"/> <!--④-->
+    <meta property="og:description" content="webエンジニアおぐのポートフォリオ"/> <!--⑤-->
+    <meta property="og:image" content="https://www.takayaogura.com/images/card.png"/> <!--⑥-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"  type="text/css" media="(min-width: 1024px)">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 1023px)">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>ogu's portfolio</title>
+</head>
+
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fixed.js"></script>
+
+    <div id="top-wrapper">
+        <div id="logo"></div>
+    </div>
+
+    <header>
+        <h1><a href="#">ogu's portfolio</a></h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#services">sevices</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contacts">contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#services">sevices</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#contacts">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!--自己紹介-->
+    <div id="about">
+        <div class="inner">
+            <div class="title">about me</div>
+            <div id="about-grid">
+                <div class="item first">
+                    <div id="face-image"></div>
+                </div>
+                <div class="item second">
+                    <div id="face-text">
+                        <div id="text-box">
+                            <h3>小倉 岳哉 (おぐら たかや)</h3>
+                            <h4>大学院生・webエンジニア</h4>
+                            <p class="chiba pc">千葉県出身　金沢大学大学院に在学中の23歳</p>
+                            <p class="chiba sp">千葉県出身　金沢大学大学院に在学中</p>
+                            <p class="pc">化学を研究しつつ、webエンジニアとして活動中</p>
+                            <p class="sp">化学を研究しつつ、webエンジニアとして活動中の23歳</p>
+                            <p>個人で活動している強みを活かし、<span class="strong">お客様のご要望に合わせて柔軟に・低価格で</span>対応いたします。</p>
+                            <p>ご興味を持って頂けましたらぜひお声かけください。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item third">
+                    <div id="hobbies-text">
+                        <div id="text-box">
+                            <h4>hobbies</h4>
+                            <p class="sp">ランニング、写真、釣り、キャンプetc...</p>
+                            <dl>
+                                <div class="list">
+                                    <dt>ランニング：</dt>
+                                    <dd>中学〜大学まで陸上一筋でした</dd>
+                                </div>
+                                <div class="list">
+                                    <dt>写真：</dt>
+                                    <dd>お客様のもとへ出向き、HP用の写真を撮ることも可能です<br><span class="small">※詳細はお問い合わせください</span></dd>
+                                </div>
+                                <div class="list">
+                                    <dt>釣り：</dt>
+                                    <dd>主に海でのルアー釣りです<br>北陸の海の幸は最高にうまい！！</dd>
+                                </div>
+                                <div class="list">
+                                    <dt>キャンプ：</dt>
+                                    <dd>自然に囲まれ心身ともにリフレッシュできます</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="item fourth">
+                    <div id="hobbies-image">
+                        <div class="slick_container">
+                            <ul class="slick01">
+                                <li>
+                                    <a href="running.html"><img alt="画像1" src="images/hobbies-running.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="photograph.html"><img alt="画像2" src="images/hobbies-photo.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="fishing.html"><img alt="画像3" src="images/hobbies-fishing.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="camping.html"><img alt="画像3" src="images/hobbies-camp.png"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--ワークス（実績紹介）-->
+    <div id="works">
+        <div class="inner">
+            <div class="title">works</div>
+            <div id="works-grid">
+                <div class="work">
+                    <div class="example copy"></div>
+                    <div class="mask">
+                        <div class="caption">Facebook コーディング</div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="example portfolio"></div>
+                    <div class="mask">
+                        <div class="caption">ogu's portfolio</div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="example health"></div>
+                    <div class="mask">
+                        <div class="caption">準備中</div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="example restaurant"></div>
+                    <div class="mask">
+                        <div class="caption">準備中
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--サービス-->
+    <div id="services">
+        <div class="inner">
+            <div class="title">services</div>
+            <div id="service-grid">
+                <div class="service">
+                    <div class="icon coding"></div>
+                    <div class="service-content">
+                        <h3>コーディング</h3>
+                        <h4>料金目安:10000円〜</h4>
+                    </div>
+                    <div class="detail">
+                        <p>デザイン案・カンプをもとにwebサイトのコーディングを行います。メンテナンスのしやすいコーディングを心がけています。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon responsive"></div>
+                    <div class="service-content">
+                        <h3>レスポンシブ対応</h3>
+                        <h4>料金目安:5000円〜</h4>
+                    </div>
+                    <div class="detail">
+                        <p>デバイスの普及により、スマホ・タブレット向け表示(レスポンシブ対応)が重要になっています。お客様のサイトをレスポンシブデザインへ対応いたします。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon lp"></div>
+                    <div class="service-content">
+                        <h3>LP制作</h3>
+                        <h4>料金目安:10000円〜</h4>
+                    </div>
+                    <div class="detail">
+                        <p>LP(ランディングページ)とは、集客に特化した縦長１ページのサイトです。お預かりしたデザインをもとに、集客アップに繋がるようなLPを制作いたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--スキル-->
+    <div id="skills">
+        <div class="inner">
+            <div class="title">skills</div>
+            <div id="skill-grid">
+                <div class="skill graph">
+                    <div id="chart"></div>
+                </div>
+                <div class="skill explain">
+                    <div class="skill-explain pc">
+                        <p>HTML, CSSを習得しており、webサイトやランディングページのコーディングが得意です。</p>
+                        <p>JavaScriptを使いwebサイトに動きをつけることが可能です(趣味欄のスライダーなど)。</p>
+                        <p>Adobeツールやwebデザインを勉強中。シンプルなサイトであればデザインから可能です。</p>
+                        <p>好奇心が旺盛で日々新しい技術をキャッチアップしています。</p>
+                    </div>
+                    <div class="skill-explain sp">
+                        <p>HTML&CSSによるwebサイトのコーディングや、JavaScriptを使いwebサイトに動きをつけることが可能です。</p>
+                        <p>Adobeツールやwebデザインを勉強中。好奇心が旺盛なので日々新しい技術を学んでいます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--お問い合わせ-->
+    <div id="contacts">
+        <div class="inner">
+            <div class="title">contact</div>
+            <div id="contact-grid">
+                <div class="contact address">
+                    <h3>お気軽にお問い合わせください</h3>
+                    <!--<h4>Email : example@gmail.com</h4>-->
+                    <h4 class="twitter"><a href="https://twitter.com/oguogu1996">twitter<i class="fab fa-twitter"></i> : @oguogu1996</a></h4>
+                    <h4>Email<i class="fa fa-envelope" aria-hidden="true"></i> : mail@takayaogura.com</h4>
+                </div>
+                <div class="contact photo">
+                    <div id="picture"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="copyright">© 2020 ogu's portfolio, All Rights Reserved.</div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</body>
+
+
+
+</html>
